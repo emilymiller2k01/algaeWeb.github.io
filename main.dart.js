@@ -20092,6 +20092,7 @@ this.b=b},
 ok:function ok(a){this.a=a},
 Ro:function Ro(a){var _=this
 _.e="Dark"
+_.f=1
 _.a=null
 _.b=a
 _.c=null},
@@ -71293,15 +71294,19 @@ N(a){var s,r,q=null,p=A.arE(a,t.hQ),o=A.b0(B.FB,B.e,B.A,B.f),n=A.bC("Language",q
 n=A.br(A.et(A.q7(B.CV,q,q,q),m,n))
 m=A.bC("Theme",q,q,q,q,q)
 s=t.p
-r=A.b0(A.b([n,A.br(A.K(A.b([A.b5(A.et(q,A.bC(this.e,q,q,q,q,q),m),1),new A.zF(B.o,B.bb,B.bL,B.Fa,2,B.Fx,B.Fs,new A.ahz(this,p),1,q)],s),B.e,B.A,B.Y)),o],s),B.e,B.A,B.f)
+r=A.b0(A.b([n,A.br(A.K(A.b([A.b5(A.et(q,A.bC(this.e,q,q,q,q,q),m),1),new A.zF(B.o,B.bb,B.bL,B.Fa,2,B.Fx,B.Fs,new A.ahz(this,p),this.f,q)],s),B.e,B.A,B.Y)),o],s),B.e,B.A,B.f)
 return A.f4(A.fD(q,q,B.Rd),r)}}
 A.ahz.prototype={
-$1(a){var s=this
-switch(a){case 0:s.b.rA($.axx())
-s.a.e="Light"
+$1(a){var s,r=this
+switch(a){case 0:s=r.a
+s.f=0
+r.b.rA($.axx())
+s.e="Light"
 break
-case 1:s.b.rA($.apc())
-s.a.e="Dark"
+case 1:s=r.a
+s.f=1
+r.b.rA($.apc())
+s.e="Dark"
 break}},
 $S:404}
 A.or.prototype={
